@@ -49,7 +49,11 @@ A data frame can be subset in many ways. One of the simplest is getting a single
 ```python
 ages=df["age"]
 ```
-
+## Subsetting: Getting a column by index
+Another simpler way of getting a column from a dataframe is by using index. For instance, if the data frame `df` contains two columns named `age` and `name`, we can extract `age` it as follows:
+```python
+ages=df.iloc[0]
+```
 #### More Information:
 1. [pandas](http://pandas.pydata.org/)
 2. [read_csv](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html?highlight=read_csv#pandas.read_csv)
